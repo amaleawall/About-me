@@ -1,0 +1,81 @@
+/* Cute Aesthetic Scratch Page Styles */
+
+body {
+  background-color: #fff7e6;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  background-color: #d0c7df;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #b38eff;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #f0e1ff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #5b3ea8;
+}
+
+nav a:hover {
+  color: #8a67e0;
+}
+
+/* MAIN CONTENT */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* DIV CONTENT BOXES */
+.content-box {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-left: 6px solid #c5a3ff;
+}
+
+/* IMAGES */
+.pretty-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* BACK TO TOP */
+.back-top a {
+  color: #5b3ea8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-top a:hover {
+  text-decoration: underline;
+}

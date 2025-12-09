@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Aesthetic CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Page-specific style overrides -->
+  <style>
+    header {
+      background: linear-gradient(135deg, #a291ff, #6b5ce5);
+      color: white;
+      padding: 70px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Soft fade-in animation */
+    .fade-card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">My Site</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="scratch.html">Scratch Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER / HERO -->
+  <header>
+    <h1>Scratch Page</h1>
+    <p>A creative playground showing off what I’ve learned.</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container mt-5">
+
+    <!-- Section 1: Overview -->
+    <div class="container fade-card mb-5">
+      <div class="container">
+        <h2>My Topic</h2>
+        <p>This scratch page is a sandbox for practicing HTML, CSS, Bootstrap, embedding tools, formatting, and dynamic elements.</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Lists -->
+    <div class="container fade-card mb-5">
+      <h3>Travel List Example</h3>
+      <p>Here’s an example of custom formatted lists with nesting:</p>
+
+      <ol>
+        <li>Places I've traveled to:
+          <ul>
+            <li>Africa</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Austria</li>
+            <li>Etc.</li>
+          </ul>
+        </li>
+
+        <li>Places I want to visit:
+          <ul>
+            <li>Ireland</li>
+            <li>Scotland</li>
+            <li>England</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Section 3: Image -->
+    <div class="container fade-card mb-5">
+      <h3>Image Example</h3>
+      <p>A simple image imported from my files:</p>
+      <img src="Screenshot_2024-06-14_144857.png" alt="Monkey with finger in mouth" class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Section 4: YouTube -->
+    <div class="container fade-card mb-5">
+      <h3>YouTube Embed</h3>
+      <p>Here is an embedded YouTube video using the proper /embed/ format:</p>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/h-9EZAn__qM"
+          title="YouTube video"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Section 5: Tableau -->
+    <!-- Travel Tableau Graph — world tourism / travel data -->
+<div class="container fade-card mb-5">
+  <h3>Travel Tableau Graph</h3>
+  <p>Interactive travel & tourism data from a public dataset.</p>
+
+  <iframe
+    src="https://public.tableau.com/views/WorldTourismAnalysis_16618431285460/Story1?:embed=y&:showVizHome=no"
+    width="100%" height="600"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+    <!-- Section 6: Web App -->
+    <div class="container fade-card mb-5">
+      <h3>My Web App</h3>
+      <p>Cookie Picker:</p>
+    <a href="webapp.html" class="btn btn-warning">Go to My Cookie Rater</a>
+
+    </div>
+
+    <!-- Back to top -->
+    <div class="text-center mb-5 fade-card">
+      <a href="#top" class="btn btn-outline-dark">Back to top</a>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
